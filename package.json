@@ -1,0 +1,18 @@
+{
+  "name": "homeworkcypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "laptop:headless": "npx cypress run -b chrome -C cypress.config.js",
+    "laptop:headed": "npx cypress run -b edge --headed -C cypress.config.js",
+    "mobile:headless": "npx cypress run -b edge -C cypress.mobile.config.js",
+    "mobile:headed": "npx cypress run -b chrome --headed -C cypress.mobile.config.js"
+  },
+  "author": "Olesia Safronova",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^14.0.1"
+  }
+}
